@@ -1,0 +1,392 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+  "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background: #eee;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  word-wrap: break-word;
+}
+
+header {
+  height: 100px;
+  margin: 0 auto;
+  color: #333;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  animation: headerChange 5s infinite;
+  -webkit-animation: headerChange 5s infinite; /* Safari 和 Chrome */
+  -moz-animation: headerChange 5s infinite; /* Firefox */
+  -o-animation: headerChange 5s infinite; /* Opera */
+  transition: all 300ms;
+}
+
+header .logo {
+  width: 60px;
+  height: 60px;
+}
+
+header .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 20px;
+}
+
+header ul li {
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.login-box {
+  min-width: 350px;
+  width: 50%;
+  margin: 60px auto 0;
+  height: auto;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+}
+
+.login-title {
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.login-remark {
+  padding: 10px 0;
+  font-size: 12px;
+  text-align: center;
+  color: red;
+}
+
+.login-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input label {
+  width: 80px;
+}
+
+.login-input input {
+  height: 38px;
+  line-height: 38px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.login-input button {
+  height: 38px;
+  line-height: 38px;
+  border: none;
+  background: #2a9cf0;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 4px;
+  margin: 20px auto 20px;
+}
+
+.formulator {
+  min-width: 350px;
+  width: 50%;
+  margin: 60px auto 0;
+  height: auto;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+  box-sizing: border-box;
+  padding: 20px;
+  position: relative;
+}
+
+.formulator-option {
+  position: absolute;
+  right: -80px;
+  top: 0;
+  width: 60px;
+  height: 500px;
+}
+
+.formulator-option li {
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: all 300ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulator-option li:hover {
+  transform: scale(1.2);
+  transition: all 300ms;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.6);
+}
+
+.formulator-input {
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.formulator-output {
+  width: 100%;
+  /* min-height: 200px; */
+}
+
+.formulator-output .label {
+  width: 100px;
+}
+
+.formulator-viewer-fx {
+  width: 15%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#viewer {
+  width: 80%;
+  height: 100%;
+  background: #eee;
+  border-radius: 4px;
+  color: #333;
+  resize: none;
+  border: none;
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formulator-tools ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formulator-tools ul li {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: #fff;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#variable-list {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  cursor: pointer;
+}
+
+#variable-list .formulator-variable {
+  height: 38px;
+  line-height: 38px;
+  margin: 0 10px;
+  background: #2a9cf0;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+#variable-list .formulator-variable-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#variable-list .formulator-variable-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 5px 0;
+}
+
+#variable-list input {
+  width: 60px;
+  height: 38px;
+  line-height: 38px;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0 2px;
+  box-sizing: border-box;
+}
+
+#formula {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#formula .formular-content {
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #eee;
+}
+
+#formula-result {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#formula-result .formular-content {
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #eee;
+}
+
+.container {
+  min-width: 350px;
+  width: 50%;
+  min-height: 200px;
+  margin: 20px auto;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.container-title {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+
+.container {
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.container p {
+  line-height: 30px;
+}
+
+.container a {
+  color: #2a9cf0;
+  text-decoration: underline;
+}
+
+.container table {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container table th {
+  background: #2a9cf0;
+  color: #fff;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+}
+
+.container table td {
+  border: 1px solid #ddd;
+  height: 38px;
+  line-height: 38px;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.container p {
+  text-indent: 2em;
+  margin: 10px 0;
+  font-size: 16px;
+}
+

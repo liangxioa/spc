@@ -1,0 +1,139 @@
+.top-bg {
+  width: 10000px;
+  height: 10000px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -2;
+  bottom: 40vh;
+  left: -5000px;
+  animation: bgmove 40s infinite;
+  -webkit-animation: bgmove 40s infinite; /* Safari 和 Chrome */
+  -moz-animation: bgmove 40s infinite; /* Firefox */
+  -o-animation: bgmove 40s infinite; /* Opera */
+  box-shadow: 0 0 10px #aaa;
+}
+
+@keyframes bgmove {
+  0% {
+    bottom: 40vh;
+    left: -5000px;
+    background: #32ccbc;
+    transition: all 300ms;
+  }
+  50% {
+    bottom: 10vh;
+    left: -3000px;
+    background: #90f7ec;
+    transition: all 300ms;
+  }
+  100% {
+    bottom: 40vh;
+    left: -5000px;
+    background: #32ccbc;
+    transition: all 300ms;
+  }
+}
+
+.animation-circle1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: -1;
+  top: 10vh;
+  left: 2%;
+  background: #f8d800;
+  animation: circle1move 40s infinite;
+  -webkit-animation: circle1move 40s infinite; /* Safari 和 Chrome */
+  -moz-animation: circle1move 40s infinite; /* Firefox */
+  -o-animation: circle1move 40s infinite; /* Opera */
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+}
+
+@keyframes circle1move {
+  0% {
+    top: 10vh;
+    left: 2%;
+    transition: all 500ms;
+  }
+  50% {
+    top: 70vh;
+    left: 80%;
+    transition: all 500ms;
+  }
+  100% {
+    top: 10vh;
+    left: 2%;
+    transition: all 500ms;
+  }
+}
+
+.animation-circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 3vh;
+    right: 2%;
+    background: #f8d800;
+    animation: circle2move 40s infinite;
+    -webkit-animation: circle2move 40s infinite; /* Safari 和 Chrome */
+    -moz-animation: circle2move 40s infinite; /* Firefox */
+    -o-animation: circle2move 40s infinite; /* Opera */
+    box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.3);
+  }
+  
+  @keyframes circle2move {
+    0% {
+      top: 10vh;
+      right: 2%;
+      transition: all 500ms;
+    }
+    50% {
+      top: 40vh;
+      right: 80%;
+      transition: all 500ms;
+    }
+    100% {
+      top: 10vh;
+      right: 2%;
+      transition: all 500ms;
+    }
+  }
+
+  .animation-circle3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    animation: circle3move 40s infinite;
+    -webkit-animation: circle3move 40s infinite; /* Safari 和 Chrome */
+    -moz-animation: circle3move 40s infinite; /* Firefox */
+    -o-animation: circle3move 40s infinite; /* Opera */
+  }
+  
+  @keyframes circle3move {
+    0% {
+      top: 200px;
+      right: 2%;
+      background: #f8d800;
+      transition: all 500ms;
+      box-shadow: -2px 2px 5px #f8d800;
+    }
+    50% {
+      top: 100px;
+      right: 60%;
+      background: #1e9265;
+      transition: all 500ms;
+      box-shadow: -2px 2px 5px #1e9265;
+    }
+    100% {
+      top: 200px;
+      right: 2%;
+      background: #f8d800;
+      transition: all 500ms;
+      box-shadow: -2px 2px 5px #f8d800;
+    }
+  }

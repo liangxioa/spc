@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>超能算</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <script src="./js/user.js"></script>
+  </head>
+  <body>
+    <!-- 动效效果 -->
+    <div class="top-bg"></div>
+    <div class="animation-circle1"></div>
+    <div class="animation-circle2"></div>
+    <div class="animation-circle3"></div>
+    <!-- 动效效果 -->
+
+    <header id="header"></header>
+    <script src="./js/header.js"></script>
+
+    <article class="container">
+      <h3>1.变量</h3>
+      <p>
+        变量需用$变量名$表示，如：变量a——$a$,变量b——$b$,变量a1——$a1$。变量正确输入后编辑器下方会自动提取出待输入的变量。
+      </p>
+      <br />
+      <h3>2.数学函数</h3>
+      <p>
+        超能算采用math.js库作为执行库，math.js是一个广泛应用于JavaScript 和 Node.js的数学库，它的特点是灵活表达式解析器，支持符号计算，内置大量函数与常量，并提供集成解决方案来处理不同的数据类型，如数字，大数字，复数，分数，单位和矩阵，可直接按其语法进行编写，仅需将其中的变量改为1中所述的方式。详细语法说明见：<a target="_blank" href="https://mathjs.org/docs/expressions/syntax.html">https://mathjs.org/docs/expressions/syntax.html</a></p>
+      <br />
+      <h3>math.js 常用常量</h3>
+      <table>
+        <tr>
+          <th>常量</th>
+          <th>描述</th>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>返回算术常量 e，即自然对数的底数（约等于2.718）。</td>
+        </tr>
+        <tr>
+          <td>LN2</td>
+          <td>返回 2 的自然对数（约等于0.693）。</td>
+        </tr>
+        <tr>
+          <td>LN10</td>
+          <td>返回 10 的自然对数（约等于2.302）。</td>
+        </tr>
+        <tr>
+          <td>LOG2E</td>
+          <td>返回以 2 为底的 e 的对数（约等于 1.414）。</td>
+        </tr>
+        <tr>
+          <td>LOG10E</td>
+          <td>返回以 10 为底的 e 的对数（约等于0.434）。</td>
+        </tr>
+        <tr>
+          <td>PI</td>
+          <td>返回圆周率（约等于3.14159）。</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <h3>math.js 常用方法</h3>
+
+      <table>
+        <tr>
+          <th>方法</th>
+          <th>描述</th>
+        </tr>
+        <tr>
+          <td>abs(x)</td>
+          <td>返回数的绝对值。</td>
+        </tr>
+        <tr>
+          <td>sqrt(x)</td>
+          <td>返回数的平方根。</td>
+        </tr>
+        <tr>
+          <td>ceil(x)</td>
+          <td>对数进行上舍入。</td>
+        </tr>
+        <tr>
+          <td>floor(x)</td>
+          <td>对数进行下舍入。</td>
+        </tr>
+        <tr>
+          <td>round(x)</td>
+          <td>把数四舍五入为最接近的整数。</td>
+        </tr>
+        <tr>
+          <td>random(x)</td>
+          <td>返回 0 ~ 1 之间的随机数。</td>
+        </tr>
+        <tr>
+          <td>pow(x,y)</td>
+          <td>返回 x 的 y 次幂。</td>
+        </tr>
+        <tr>
+          <td>max(x,y)</td>
+          <td>返回 x 和 y 中的最高值。</td>
+        </tr>
+        <tr>
+          <td>min(x,y)</td>
+          <td>返回 x 和 y 中的最低值。</td>
+        </tr>
+        <tr>
+          <td>exp(x)</td>
+          <td>返回 e 的指数。</td>
+        </tr>
+        <tr>
+          <td>log(x)</td>
+          <td>返回数的自然对数（底为e）。</td>
+        </tr>
+        <tr>
+          <td>sin(x)</td>
+          <td>返回数的正弦。</td>
+        </tr>
+        <tr>
+          <td>cos(x)</td>
+          <td>返回数的余弦。</td>
+        </tr>
+        <tr>
+          <td>tan(x)</td>
+          <td>返回角的正切。</td>
+        </tr>
+        <tr>
+          <td>asin(x)</td>
+          <td>返回数的反正弦值。</td>
+        </tr>
+        <tr>
+          <td>acos(x)</td>
+          <td>返回数的反余弦值。</td>
+        </tr>
+        <tr>
+          <td>atan(x)</td>
+          <td>以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。</td>
+        </tr>
+        <tr>
+          <td>atan2(y,x)</td>
+          <td>
+            返回从 x 轴到点 (x,y) 的角度（介于 -PI/2 与 PI/2 弧度之间）。
+          </td>
+        </tr>
+      </table>
+    </article>
+  </body>
+</html>
